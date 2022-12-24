@@ -32,8 +32,8 @@ const amountCumm= amountCummRef.current.value;
 
 if(title =="Granite")
 {setCount1(count1+1);
-const GraniteObj ={ count1:count1, description: description, unit:unit, title:title , rate:rate, this:quantityThis, previous:quantityPrev, cummulative: quantityCumm};
-
+const GraniteObj ={ count1:count1, description: description, unit:unit, title:title, rate:rate, this:amountThis, previous:amountPrev, cummulative: amountCumm };
+//console.log(GraniteObj);
 arr1.push(GraniteObj);
 }
 else if(title=="Tiles")
