@@ -1,10 +1,14 @@
 import React from 'react';
+import SummaryInput from './SummaryInput';
+import SummaryTiles from './SummaryTiles';
 
-const Summary = ({arr}) => {
-    console.log(arr);
+const Summary = ({arr1, arr2}) => {
+    console.log(arr1, arr2);
+   
     return (
         <div>
-{    arr.map( item=>(item.description))}
+{    arr1.map( item=>(<SummaryInput item={item}></SummaryInput>))}
+{    arr2.map( item=>(<SummaryTiles item={item}></SummaryTiles>))}
         </div>
     );
 };

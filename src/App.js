@@ -6,15 +6,16 @@ import Summary from './components/BillInput/Summary';
 
 
 function App() {
-  var arr=[];
+  var arr1=[];
+  var arr2=[];
   return (
     <div className="App">
   <Routes>
-  <Route path='/' element={<BillInput arr={arr}></BillInput>}>   </Route>
+  <Route path='/' element={<BillInput arr1={arr1} arr2={arr2}></BillInput>}>   </Route>
     <Route path='/billInput' element={<BillInput></BillInput>}>
 
     </Route>
-    <Route path='/summary' element={<Summary  arr={arr}></Summary>}>
+    <Route path='/summary' element={<Summary arr2={arr2}  arr1={arr1}></Summary>}>
 
 </Route>
   </Routes>
