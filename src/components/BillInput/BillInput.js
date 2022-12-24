@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
 
-const BillInput = () => {
-    var arr=[];
+const BillInput = ({arr}) => {
+
     const descriptionRef = useRef('');
     const unitRef = useRef('');
 const handleData=(event)=>{
@@ -12,7 +13,7 @@ const unit= unitRef.current.value;
 
 const billObj ={description: description, unit:unit};
 arr.push(billObj);
-console.log(arr);
+
 }
     return (
         <div className='grid h-screen place-items-center'>
@@ -64,7 +65,7 @@ console.log(arr);
     &copy;2020 Acme Corp. All rights reserved.
   </p>
 </div>
-
+<Link to="/summary">See The Data Summary</Link>
         </div>
     );
 };
